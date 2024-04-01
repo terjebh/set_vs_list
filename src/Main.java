@@ -14,7 +14,6 @@ public class Main {
 
     }
 
-
     private static long fjern(Collection<Integer> coll) {
         long start = System.currentTimeMillis();
         for(int i=0;i<coll.size(); i++) coll.remove(i);
