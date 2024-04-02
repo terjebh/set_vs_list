@@ -9,16 +9,16 @@ public class Main {
         List<Integer> arrayListe = new ArrayList<>();
         List<Integer> linkedListe = new LinkedList<>();
 
-        System.out.print(STR."Legge til \{N} tall i Arraylist: \{leggTil(arrayListe, N)} millisekunder "); print(arrayListe);
-        System.out.println(STR."Fjerne \{N} tall i Arraylist: \{fjern(arrayListe)} millisekunder");
-        System.out.print(STR."Legge til \{N} tall i Linkedlist: \{leggTil(linkedListe, N)} millisekunder "); print(linkedListe);
-        System.out.println(STR."Fjerne \{N} tall i Linkedlist: \{fjern(linkedListe)} millisekunder");
+        System.out.print(STR."Legge til \{N} tall i Arraylist: \t \{leggTil(arrayListe, N)} millisekunder "); print(arrayListe);
+        System.out.println(STR."Fjerne \{N} tall i Arraylist: \t\t \{fjern(arrayListe)} millisekunder");
+        System.out.print(STR."Legge til \{N} tall i Linkedlist: \t \{leggTil(linkedListe, N)} millisekunder "); print(linkedListe);
+        System.out.println(STR."Fjerne \{N} tall i Linkedlist: \t \{fjern(linkedListe)} millisekunder");
 
         System.out.println("-".repeat(30));
-        System.out.print(STR."Legge til \{N} tall i HashSet: \{leggTil(hashSett, N)} millisekunder ");  print(hashSett);
-        System.out.println(STR."Fjerne \{N} tall i HashSet: \{fjern(hashSett)} millisekunder");
-        System.out.print(STR."Legge til \{N} tall i TreeSet: \{leggTil(treeSett, N)} millisekunder "); print(treeSett);
-        System.out.println(STR."Fjerne \{N} tall i TreeSet: \{fjern(treeSett)} millisekunder");
+        System.out.print(STR."Legge til \{N} tall i HashSet: \t \{leggTil(hashSett, N)} millisekunder ");  print(hashSett);
+        System.out.println(STR."Fjerne \{N} tall i HashSet: \t\t \{fjern(hashSett)} millisekunder");
+        System.out.print(STR."Legge til \{N} tall i TreeSet: \t \{leggTil(treeSett, N)} millisekunder "); print(treeSett);
+        System.out.println(STR."Fjerne \{N} tall i TreeSet: \t\t \{fjern(treeSett)} millisekunder");
 
     }
 
