@@ -9,15 +9,19 @@ public class Main {
         List<Integer> arrayListe = new ArrayList<>();
         List<Integer> linkedListe = new LinkedList<>();
 
-        System.out.print(STR."Legge til \{N} tall i Arraylist: \t \{leggTil(arrayListe, N)}  "); print(arrayListe);
+        System.out.print(STR."Legge til \{N} tall i Arraylist: \t \{leggTil(arrayListe, N)}  ");
+        print(arrayListe);
         System.out.println(STR."Fjerne \{N} tall i Arraylist: \t\t \{fjern(arrayListe)} ");
-        System.out.print(STR."Legge til \{N} tall i Linkedlist: \t \{leggTil(linkedListe, N)}  "); print(linkedListe);
+        System.out.print(STR."Legge til \{N} tall i Linkedlist: \t \{leggTil(linkedListe, N)}  ");
+        print(linkedListe);
         System.out.println(STR."Fjerne \{N} tall i Linkedlist: \t \{fjern(linkedListe)} ");
 
         System.out.println("-".repeat(120));
-        System.out.print(STR."Legge til \{N} tall i HashSet: \t \{leggTil(hashSett, N)}  ");  print(hashSett);
+        System.out.print(STR."Legge til \{N} tall i HashSet: \t \{leggTil(hashSett, N)}  ");
+        print(hashSett);
         System.out.println(STR."Fjerne \{N} tall i HashSet: \t\t \{fjern(hashSett)} ");
-        System.out.print(STR."Legge til \{N} tall i TreeSet: \t \{leggTil(treeSett, N)}  "); print(treeSett);
+        System.out.print(STR."Legge til \{N} tall i TreeSet: \t \{leggTil(treeSett, N)}  ");
+        print(treeSett);
         System.out.println(STR."Fjerne \{N} tall i TreeSet: \t\t \{fjern(treeSett)} ");
 
     }
@@ -29,14 +33,14 @@ public class Main {
         long start = System.currentTimeMillis();
         tall.forEach(coll::add);
         long tid = System.currentTimeMillis() - start;
-        return (tid < 1000L ? tid+" millisekunder" : tid/1000.0+ " sekunder");
+        return (tid < 1000L ? STR."\{tid} millisekunder" : STR."\{tid / 1000.0} sekunder");
     }
 
     private static String fjern(Collection<Integer> coll) {
         long start = System.currentTimeMillis();
         for (int i = 0; i < coll.size(); i++) coll.remove(i);
         long tid = System.currentTimeMillis() - start;
-        return (tid < 1000L ? tid+" millisekunder" : tid/1000.0+ " sekunder");
+        return (tid < 1000L ? STR."\{tid} millisekunder" : STR."\{tid / 1000.0} sekunder");
     }
 
     private static void print(Collection<Integer> coll) {
@@ -45,4 +49,4 @@ public class Main {
         System.out.println("]");
     }
 
-    }
+}
