@@ -14,7 +14,7 @@ public class Main {
         System.out.print(STR."Legge til \{N} tall i Linkedlist: \t \{leggTil(linkedListe, N)}  "); print(linkedListe);
         System.out.println(STR."Fjerne \{N} tall i Linkedlist: \t \{fjern(linkedListe)} ");
 
-        System.out.println("-".repeat(30));
+        System.out.println("-".repeat(120));
         System.out.print(STR."Legge til \{N} tall i HashSet: \t \{leggTil(hashSett, N)}  ");  print(hashSett);
         System.out.println(STR."Fjerne \{N} tall i HashSet: \t\t \{fjern(hashSett)} ");
         System.out.print(STR."Legge til \{N} tall i TreeSet: \t \{leggTil(treeSett, N)}  "); print(treeSett);
